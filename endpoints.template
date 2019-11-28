@@ -1,0 +1,7 @@
+endpoints:
+  fedora-31-gnome:
+    path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
+    files:
+    - vmlinuz
+    - initrd
+    - squashfs.img
