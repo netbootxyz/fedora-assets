@@ -1,9 +1,9 @@
 endpoints:
-  fedora-31-KDE:
+  fedora-31-SoaS:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     version: 31
-    flavor: KDE
+    flavor: SoaS
