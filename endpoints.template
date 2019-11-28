@@ -5,3 +5,5 @@ endpoints:
     - vmlinuz
     - initrd
     - squashfs.img
+    version: 31
+    flavor: GNOME
