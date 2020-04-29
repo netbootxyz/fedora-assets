@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="master"
+    - BRANCH="32"
     - GITHUB_ENDPOINT="netbootxyz/fedora-assets"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="iso_extraction"
 
 branches:
   only:
-    - 'master'
+    - '32'
 if: type != pull_request AND tag IS blank
 script:
   - |
