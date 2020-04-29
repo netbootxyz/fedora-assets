@@ -1,4 +1,4 @@
-URL="https://dl.fedoraproject.org/pub/fedora/linux/releases/31/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-31-REPLACE_VERSION.iso"
+URL="https://dl.fedoraproject.org/pub/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-32-REPLACE_VERSION.iso"
 TYPE=file
 CONTENTS="\
 isolinux/vmlinuz|vmlinuz

@@ -1,10 +1,10 @@
 endpoints:
-  fedora-31-MATE_Compiz:
+  fedora-32-MATE_Compiz:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 31
+    version: 32
     flavor: MATE_Compiz
