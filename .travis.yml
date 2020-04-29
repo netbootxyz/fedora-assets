@@ -14,7 +14,7 @@ env:
 
 branches:
   only:
-    - '31-SoaS'
+    - '32-SoaS'
 if: type != pull_request AND tag IS blank
 script:
   - |
