@@ -7,18 +7,18 @@ services:
 
 env:
   global:
-    - BRANCH="32-MATE_Compiz"
+    - BRANCH="33-MATE_Compiz"
     - GITHUB_ENDPOINT="netbootxyz/fedora-assets"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="iso_extraction"
 
 branches:
   only:
-    - '32-MATE_Compiz'
+    - '33-MATE_Compiz'
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION=$(curl -sL https://dl.fedoraproject.org/pub/fedora/linux/releases/32/Spins/x86_64/iso/ |awk '/Fedora-MATE_Compiz-Live/' | grep -Po "(\d+\.)+\d+" | head -1)
+    export EXTERNAL_VERSION=$(curl -sL https://dl.fedoraproject.org/pub/fedora/linux/releases/33/Spins/x86_64/iso/ |awk '/Fedora-MATE_Compiz-Live/' | grep -Po "(\d+\.)+\d+" | head -1)
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL
