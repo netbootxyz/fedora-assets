@@ -1,10 +1,10 @@
 endpoints:
-  fedora-32-gnome:
+  fedora-33-gnome:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 32
+    version: 33
     flavor: GNOME
