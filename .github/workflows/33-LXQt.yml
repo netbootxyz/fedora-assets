@@ -11,7 +11,6 @@ env:
   BRANCH: 33-LXQt
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
-  GITHUB_SHA: ${{ github.sha }}
   BUILD_TYPE: iso_extraction
   DEBIAN_FRONTEND: noninteractive
   CI_TOKEN: ${{ secrets.CI_TOKEN }}
@@ -22,12 +21,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: 33-LXQt
+
+    - name: Get SHA of actual branch instead of master
+      run: |
+        export GITHUB_SHA=$(git rev-parse HEAD)
+        echo "GITHUB_SHA=$GITHUB_SHA" >> $GITHUB_ENV
 
     - name: Retrieve latest version from upstream and set vars
       run: |
         export EXTERNAL_VERSION=$(sudo bash version.sh)
         echo "EXTERNAL_VERSION=$EXTERNAL_VERSION" >> $GITHUB_ENV
-        export GITHUB_TAG=${EXTERNAL_VERSION}-$(echo ${GITHUB_SHA} | cut -c1-8)
+        export GITHUB_TAG=${EXTERNAL_VERSION}-$(echo ${{ env.GITHUB_SHA }} | cut -c1-8)
         echo "GITHUB_TAG=$GITHUB_TAG" >> $GITHUB_ENV
         wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
 
