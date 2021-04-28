@@ -1,5 +1,5 @@
 endpoints:
-  fedora-34-Cinnamon:
+  fedora-34-i3:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
@@ -7,4 +7,4 @@ endpoints:
     - squashfs.img
     os: fedora
     version: 34
-    flavor: Cinnamon
+    flavor: i3
