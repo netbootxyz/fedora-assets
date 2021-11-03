@@ -1,10 +1,10 @@
 endpoints:
-  fedora-34-LXDE:
+  fedora-35-LXDE:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 34
+    version: 35
     flavor: LXDE
