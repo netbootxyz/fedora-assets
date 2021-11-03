@@ -1,10 +1,10 @@
 endpoints:
-  fedora-34-KDE:
+  fedora-35-KDE:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 34
+    version: 35
     flavor: KDE
