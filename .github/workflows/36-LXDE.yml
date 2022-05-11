@@ -1,14 +1,14 @@
-name: 35-LXDE
+name: 36-LXDE
 
 on:
   push:
     branches:
-      - 35-LXDE
+      - 36-LXDE
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 35-LXDE
+  BRANCH: 36-LXDE
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: 35-LXDE
+        ref: 36-LXDE
 
     - name: Get SHA of actual branch instead of master
       run: |
