@@ -1,10 +1,10 @@
 endpoints:
-  fedora-35-LXQt:
+  fedora-36-LXQt:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 35
+    version: 36
     flavor: LXQt
