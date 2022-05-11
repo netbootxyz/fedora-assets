@@ -1,10 +1,10 @@
 endpoints:
-  fedora-35-Xfce:
+  fedora-36-Xfce:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 35
+    version: 36
     flavor: Xfce
