@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 35-MATE_Compiz
+    paths-ignore:
+      - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
