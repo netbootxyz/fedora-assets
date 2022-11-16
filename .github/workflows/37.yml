@@ -1,16 +1,16 @@
-name: 36
+name: 37
 
 on:
   push:
     branches:
-      - 36
+      - 37
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 36
+  BRANCH: 37
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: 36
+        ref: 37
 
     - name: Get SHA of actual branch instead of master
       run: |
