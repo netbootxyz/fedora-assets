@@ -1,14 +1,14 @@
-name: 36-Xfce
+name: 37-Xfce
 
 on:
   push:
     branches:
-      - 36-Xfce
+      - 37-Xfce
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 36-Xfce
+  BRANCH: 37-Xfce
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: 36-Xfce
+        ref: 37-Xfce
 
     - name: Get SHA of actual branch instead of master
       run: |
