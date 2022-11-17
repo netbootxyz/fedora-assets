@@ -1,10 +1,10 @@
 endpoints:
-  fedora-36-Cinnamon:
+  fedora-37-Cinnamon:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 36
+    version: 37
     flavor: Cinnamon
