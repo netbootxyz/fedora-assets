@@ -1,16 +1,16 @@
-name: 35-MATE_Compiz
+name: 37-KDE
 
 on:
   push:
     branches:
-      - 35-MATE_Compiz
+      - 37-KDE
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 35-MATE_Compiz
+  BRANCH: 37-KDE
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: 35-MATE_Compiz
+        ref: 37-KDE
 
     - name: Get SHA of actual branch instead of master
       run: |

@@ -1,16 +1,16 @@
-name: 35-LXQt
+name: 37-SoaS
 
 on:
   push:
     branches:
-      - 35-LXQt
+      - 37-SoaS
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 35-LXQt
+  BRANCH: 37-SoaS
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: 35-LXQt
+        ref: 37-SoaS
 
     - name: Get SHA of actual branch instead of master
       run: |
