@@ -1,10 +1,10 @@
 endpoints:
-  fedora-36-SoaS:
+  fedora-37-SoaS:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 36
+    version: 37
     flavor: SoaS

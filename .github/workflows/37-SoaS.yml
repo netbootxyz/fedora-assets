@@ -1,14 +1,14 @@
-name: 36-SoaS
+name: 37-SoaS
 
 on:
   push:
     branches:
-      - 36-SoaS
+      - 37-SoaS
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 36-SoaS
+  BRANCH: 37-SoaS
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: 36-SoaS
+        ref: 37-SoaS
 
     - name: Get SHA of actual branch instead of master
       run: |
