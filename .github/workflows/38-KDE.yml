@@ -1,14 +1,14 @@
-name: 37-KDE
+name: 38-KDE
 
 on:
   push:
     branches:
-      - 37-KDE
+      - 38-KDE
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 37-KDE
+  BRANCH: 38-KDE
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: 37-KDE
+        ref: 38-KDE
 
     - name: Get SHA of actual branch instead of master
       run: |
