@@ -1,4 +1,4 @@
-URL="https://dl.fedoraproject.org/pub/fedora/linux/releases/37/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-37-REPLACE_VERSION.iso"
+URL="https://dl.fedoraproject.org/pub/fedora/linux/releases/38/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-38-REPLACE_VERSION.iso"
 TYPE=file
 CONTENTS="\
 images/pxeboot/vmlinuz|vmlinuz
