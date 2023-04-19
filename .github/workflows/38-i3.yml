@@ -1,14 +1,14 @@
-name: 37-i3
+name: 38-i3
 
 on:
   push:
     branches:
-      - 37-i3
+      - 38-i3
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 37-i3
+  BRANCH: 38-i3
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: 37-i3
+        ref: 38-i3
 
     - name: Get SHA of actual branch instead of master
       run: |
