@@ -1,10 +1,10 @@
 endpoints:
-  fedora-38-i3:
+  fedora-39-i3:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 38
+    version: 39
     flavor: i3
