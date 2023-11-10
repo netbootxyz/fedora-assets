@@ -1,16 +1,16 @@
-name: 38-SoaS
+name: 39-SoaS
 
 on:
   push:
     branches:
-      - 38-SoaS
+      - 39-SoaS
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 38-SoaS
+  BRANCH: 39-SoaS
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: 38-SoaS
+        ref: 39-SoaS
 
     - name: Get SHA of actual branch instead of master
       run: |
