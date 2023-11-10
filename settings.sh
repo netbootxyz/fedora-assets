@@ -1,4 +1,4 @@
-URL="https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-REPLACE_VERSION.iso"
+URL="https://download.fedoraproject.org/pub/fedora/linux/releases/39/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-39-REPLACE_VERSION.iso"
 TYPE=file
 CONTENTS="\
 images/pxeboot/vmlinuz|vmlinuz
