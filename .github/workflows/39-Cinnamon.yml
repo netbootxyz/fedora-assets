@@ -1,16 +1,16 @@
-name: 38-Cinnamon
+name: 39-Cinnamon
 
 on:
   push:
     branches:
-      - 38-Cinnamon
+      - 39-Cinnamon
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 38-Cinnamon
+  BRANCH: 39-Cinnamon
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: 38-Cinnamon
+        ref: 39-Cinnamon
 
     - name: Get SHA of actual branch instead of master
       run: |
