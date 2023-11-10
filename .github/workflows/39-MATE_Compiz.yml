@@ -1,16 +1,16 @@
-name: 38-MATE_Compiz
+name: 39-MATE_Compiz
 
 on:
   push:
     branches:
-      - 38-MATE_Compiz
+      - 39-MATE_Compiz
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 6'
 
 env:
-  BRANCH: 38-MATE_Compiz
+  BRANCH: 39-MATE_Compiz
   GITHUB_ENDPOINT: netbootxyz/fedora-assets
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: 38-MATE_Compiz
+        ref: 39-MATE_Compiz
 
     - name: Get SHA of actual branch instead of master
       run: |
