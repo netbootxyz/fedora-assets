@@ -1,10 +1,10 @@
 endpoints:
-  fedora-40-gnome:
+  fedora-44-gnome:
     path: /fedora-assets/releases/download/REPLACE_RELEASE_NAME/
     files:
     - vmlinuz
     - initrd
     - squashfs.img
     os: fedora
-    version: 40
+    version: 44
     flavor: GNOME
